@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Time message</title>
+    <link rel="stylesheet" href="timemessage.css">
+</head>
+
+<body>
+    <div class="center">
+        <p id="currentTime"></p>
+        <form>
+            <input type="button" value="What will you do?" onclick="msg()">
+        </form>
+        <p id="messageToShow"></p>
+    </div>
+
+    <script>
+        var d = new Date();
+        var n = d.getHours();
+        var m = d.getMinutes();
+
+        if (m < 10) {
+            document.getElementById("currentTime").innerHTML = n + ":" + "0" + m;
+        } else {
+            document.getElementById("currentTime").innerHTML = n + ":" + m;
+        }
+
+        var message;
+        switch (new Date().getHours()) {
+            case 0:
+            case 1:
+            case 2:
+            case 3:
+                message = ["Let's check Instagram", "Close your eyes and relax", "Let's drink water"];
+                break;
+            case 4:
+            case 5:
+            case 6:
+                message = ["Sleep a bit more", "Get up and look outside", "Go to washroom"];
+                break;
+            case 7:
+            case 8:
+            case 9:
+                message = ["Have breakfast", "Open the door and feel the weather", "Have some coffee"];
+                break;
+            case 10:
+            case 11:
+                message = ["Let's do some exercise", "Play with your cat", "Check the weather"];
+                break;
+            case 12:
+                message = ["Time for lunch", "Work a little bit more?", "Let's do some exercise"];
+                break;
+            case 13:
+            case 14:
+                message = ["Play with your cat", "Early fika?", "Work a bit more before fika?"];
+                break;
+            case 15:
+                message = ["Fika time!", "Time for a little nap", "Let's do some exercise"];
+                break;
+            case 16:
+                message = ["Play with your cat", "some sweets?", "Exercise with your neck"];
+                break;
+            case 17:
+            case 18:
+                message = ["Time to relax!", "A bit of self-study?", "Watch TV"];
+                break;
+            case 19:
+            case 20:
+                message = ["Time for dinner", "Lay down on the soffa", "play with your cat"];
+                break;
+            case 21:
+            case 22:
+            case 23:
+                message = ["Time for bed", "Watch TV a bit more", "A bit of self-study"];
+                break;
+            case 24:
+                message = ["Some Instgram?", "Close your eyes and relax", "Cuddle with your cat"];
+                break;
+            default:
+                message = ["test"];
+        }
+
+        function msg() {
+            var randomMessage = message[Math.floor(Math.random() * message.length)];
+            document.getElementById("messageToShow").innerHTML = randomMessage;
+            
+            var x = document.getElementById("messageToShow");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else if (x.getAttribute("style")==null) {
+                x.style.display = "block";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
