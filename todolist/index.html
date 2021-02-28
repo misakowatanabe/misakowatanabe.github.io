@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>New project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todolist.css">
+</head>
+
+<body>
+    <!-- <a href="https://misakowatanabe.github.io/">Go back to home</a> -->
+    <div id="myDIV" class="header">
+        <input type="text" id="input" onkeydown="triggerAddElement(event)" placeholder="I will do...">
+        <span onclick="addElement()" id="addBtn" class="addButton">
+            <svg version="1.1" id="pen" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve">
+                <g>
+                    <path id="penPath" class="st0" d="M506.53,88.263L423.737,5.47c-7.294-7.293-19.118-7.293-26.411,0L47.776,341.176
+            		c-2.168,2.168-3.769,4.836-4.661,7.768L0.836,487.86c-4.35,14.293,9.011,27.654,23.304,23.305l143.382-43.639h0L506.53,114.675
+            		C513.823,107.381,513.823,95.556,506.53,88.263z M63.524,465.077l-16.584-16.584l24.373-80.107l47.004,25.29l25.296,47.012
+            		L63.524,465.077z M453.986,75.041L156.172,374.747l-18.919-18.918l299.72-297.828l17.013,17.012
+            		C453.986,75.024,453.986,75.03,453.986,75.041z"></path>
+                </g>
+            </svg>
+        </span>
+    </div>
+
+    <ul id="list">
+    </ul>
+
+    <script>
+        // Create a new list item when clicking on the "Add" button
+        var closeButton = document.getElementsByClassName("closeButton");
+        function addElement() {
+            var newListElement = document.createElement("li"); // Create a <li> element
+            var inputValue = document.getElementById("input").value; // Create a variable of a value of a text field (type="text")
+            var text = document.createTextNode(inputValue); // Create a variable of inputValue as a text node. To create any element (e.g. <li>), you must create both an <li> element and a text node.
+            newListElement.appendChild(text); //Append the text to the created <li>
+            if (inputValue === "") {
+                alert("Write something");
+            } else {
+                document.getElementById("list").appendChild(newListElement); // Append the created <li> and write it into the <ul id="list">
+            }
+            document.getElementById("input").value = "";
+
+            var newSpanElement = document.createElement("span"); // Create a new <span> element
+            var x = document.createTextNode("\u00D7"); // Create a variable of x sign (\u00D7) as a text node
+            newSpanElement.appendChild(x); //Append the x to the created <span>
+            newListElement.appendChild(newSpanElement); // Append the <span> to the new created list element
+            newSpanElement.className = "closeButton"; // Give the <span> a classname "closeButton" for styling
+            newSpanElement.onclick = function () {
+                var div = this.parentElement;
+                div.style.display = "none";
+            }
+
+            var li = document.getElementsByTagName("li");
+            if (li.length > 1) {
+                li[li.length - 2].style.borderBottomLeftRadius = "0px";
+                li[li.length - 2].style.borderBottomRightRadius = "0px";
+            }
+
+            li[0].style.borderTopRightRadius = "5px";
+            li[0].style.borderTopLeftRadius = "5px";
+            li[li.length - 1].style.borderBottomLeftRadius = "5px";
+            li[li.length - 1].style.borderBottomRightRadius = "5px";
+        }
+
+        // Add a new list item when pressing a return key
+        function triggerAddElement(event) {
+            if (event.keyCode == 13) {  // 13 is the enter key
+                addElement(); // Call the addElement function defined above
+            }
+        }
+
+        // Add a "checked" symbol when clicking on a list item
+        var list = document.getElementById("list");
+        list.addEventListener("click", function (event) { // Attach an event handler (ex: click) to a specified element (ex: list). 
+            if (event.target.tagName === "LI") { // Use upper case for "event.target.tagName ===" "document.getElementsByTagName()"
+                event.target.classList.toggle("checked");
+            }
+        }, false);
+
+        // Change the logo darker only when hovered
+        var addButton = document.getElementById("addBtn");
+        var penPath = document.getElementById("penPath");
+        addButton.onmouseover = function () {
+            penPath.style.fill = "#4e4e4e";
+        }
+        addButton.onmouseleave = function () {
+            penPath.style.fill = "#979797";
+        }
+    </script>
+</body>
+
+</html>
