@@ -38,22 +38,42 @@
             var text = document.createTextNode(inputValue); // Create a variable of inputValue as a text node. To create any element (e.g. <li>), you must create both an <li> element and a text node.
             newListElement.appendChild(text); //Append the text to the created <li>
             if (inputValue === "") {
-                alert("Write something");
+                alert("Write something :)");
             } else {
                 document.getElementById("list").appendChild(newListElement); // Append the created <li> and write it into the <ul id="list">
             }
             document.getElementById("input").value = "";
 
+            // Create x function to remove a list element
             var newSpanElement = document.createElement("span"); // Create a new <span> element
             var x = document.createTextNode("\u00D7"); // Create a variable of x sign (\u00D7) as a text node
             newSpanElement.appendChild(x); //Append the x to the created <span>
             newListElement.appendChild(newSpanElement); // Append the <span> to the new created list element
             newSpanElement.className = "closeButton"; // Give the <span> a classname "closeButton" for styling
-            newSpanElement.onclick = function () {
-                var div = this.parentElement;
-                div.style.display = "none";
+            
+            //  Maintain the shape of a first and last close buttons as round one when an element is removed
+            newSpanElement.onmouseover = function () {
+                var closeButton = document.getElementsByClassName("closeButton");
+                if (closeButton.length > 0) { // Add this limitation otherwise an error will occur when all the element is removed
+                    closeButton[0].style.borderTopRightRadius = "5px";
+                    closeButton[li.length - 1].style.borderBottomRightRadius = "5px";
+                }
             }
 
+            // Maintain the shape of a first and last list elements as round one when an element is removed
+            newSpanElement.onclick = function () {
+                var div = this.parentElement;
+                div.remove();
+                var li = document.getElementsByTagName("li");
+                if (li.length > 0) {
+                    li[0].style.borderTopRightRadius = "5px";
+                    li[0].style.borderTopLeftRadius = "5px";
+                    li[li.length - 1].style.borderBottomLeftRadius = "5px";
+                    li[li.length - 1].style.borderBottomRightRadius = "5px";
+                }
+            }
+
+            // Maintain the shape of a list whenever a list element is created
             var li = document.getElementsByTagName("li");
             if (li.length > 1) {
                 li[li.length - 2].style.borderBottomLeftRadius = "0px";
