@@ -1,17 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="no-js">
 
 <head>
     <meta charset="utf-8">
-    <title>Home</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.css">
+    <title>Home</title>
+    <meta name="description" content="The portfolio website of Misako Watanabe" />
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="pure-drawer.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="media-queries.css">
+
+
+
+    <script>
+    // TODO: Add Page Load javascript
+    </script>
 </head>
 
 <body>
+    <!-- TODO: Add Page Loader -->
+    <nav class="navbar home bg">
+        <div class="container">
+            <!-- to overlap elements with negative margin -->
+            <div class="row">
+                <div class="col-xs-1">
+                    <figure class="logo">
+                        <a href="#home"><img src="img/home.svg" alt="logo"></a>
+                    </figure>
+                </div>
+                <div class="col-xs-11">
+                    <ul class="nav-items">
+                        <li class="work home"><a href="#work">Work</li></a>
+                        <li class="about home"><a href="about.html">About</li></a>
+                        <li class="contact home"><a href="contact.html">Contact</li></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Start Responsive Menu Icon (hamburger) -->
+    <div class="pure-container" data-effect="pure-effect-slide">
+        <input type="checkbox" id="pure-toggle-right" class="pure-toggle" data-toggle="right" />
+        <label class="pure-toggle-label" for="pure-toggle-right" data-toggle-label="right">
+            <span class="pure-toggle-icon"></span>
+        </label>
+        <nav class="pure-drawer" data-position="right">
+            <p class="mobile-menu-items" style="padding: 140px 40px; margin: 0;">
+                <a href="index.html#work">Work</a>
+                <br>
+                <a href="about.html">About</a>
+                <br>
+                <a href="contact.html">Contact</a>
+            </p>
+        </nav>
+        <div class="pure-pusher-container">
+            <div class="pure-pusher"></div>
+        </div>
+        <label class="pure-overlay" for="pure-toggle-right" data-overlay="right"></label>
+    </div>
+
+    <!-- Start Header -->
+
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-xs-12 full-width">
+
+                <figure class="home-header">
+                    <img src="img/star.jpg" alt="home-header">
+                </figure>
+
+                <figure class="home-header-small">
+                    <img src="img/star.jpg" alt="home-header">
+                </figure>
+                <figure class="logo-lockup">
+                    <img src="img/home/logo-lockup.svg" alt="logo=lockup">
+                </figure>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!-- End Header -->
+
+
+
+
+
+
+
     <h1>Misako Watanabe</h1>
-    <a href="https://misakowatanabe.github.io/timemessage/">Time Message</a>
-    <a href="https://misakowatanabe.github.io/todolist/">Todolist</a>
+    <a href="https://misakowatanabe.github.io/timemessage/" target="_blank">Time Message</a>
+    <a href="https://misakowatanabe.github.io/todolist/" target="_blank">Todolist</a>
+    <p id="test">test</p>
+    <button>Click me</button>
+    <p class="lead">This paragraph stands out.</p>
+    <p>This is a regular paragraph.</p>
+    </div>
+
+
+
 </body>
 
 </html>

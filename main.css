@@ -1,0 +1,139 @@
+body {
+  background-color: #585858;
+  color: #333333;
+}
+
+/********** Home button and navbar **********/
+
+figure.logo {
+  margin-top: 10px;
+  position: fixed;
+}
+
+nav.navbar {
+  position: fixed;
+  z-index: 10;
+}
+
+nav.navbar.bg {
+  background-color: #f7f7f700;
+  margin-bottom: 0px;
+  transition: all 0.5s ease 0s;
+}
+
+/* Position of texts of navbar */
+ul.nav-items {
+  text-align: right;
+}
+
+/* Style of the texts of navbar */
+ul.nav-items > li {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 19px;
+  letter-spacing: -1px;
+  padding-top: 20px;
+  text-align: right;
+  padding-top: 24px;
+  padding-left: 30px;
+}
+
+/* color of the text contents in the navbar */
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #f047d4;
+  text-decoration: none;
+}
+
+/********** Hamburger and x **********/
+
+/* colour of hamburger */
+.pure-toggle-label .pure-toggle-icon,
+.pure-toggle-label .pure-toggle-icon:before,
+.pure-toggle-label .pure-toggle-icon:after {
+  background: #ffffff;
+}
+
+/* colour of hamburger when hovering */
+.pure-toggle-label:hover .pure-toggle-icon,
+.pure-toggle-label:hover .pure-toggle-icon:before,
+.pure-toggle-label:hover .pure-toggle-icon:after {
+  background-color: #f047d4;
+  border-color: #f047d4;
+  color: #f047d4;
+}
+
+/* style and position of the hamburger circle */
+.pure-toggle-label {
+  border: 2px #ffffff00;
+  color: #ffffff00;
+  top: -4px;
+}
+
+/* colour of the hamburger circle when hovering */
+.pure-toggle-label:hover {
+  border-color: #ffffff00;
+  color: #ffffff00;
+}
+
+/* the right margin of the hamburger */
+.pure-toggle-label[data-toggle-label="right"] {
+  right: 15px;
+}
+
+/********** contents of drawer **********/
+
+/* colour of menu contents */
+a {
+  color: #ffffff;
+}
+
+/* colour of menu contents when hovering */
+p.mobile-menu-items a:hover {
+  color: #f047d4;
+  text-decoration: none;
+}
+
+.pure-container {
+  height: 0%;
+}
+
+/* color of drawer */
+.pure-drawer {
+  background-color: rgba(30, 37, 40, 0.97);
+  position: fixed;
+}
+
+/* Style of the contents of drawer */
+p.mobile-menu-items {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 38px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 77px;
+}
+
+/********** img **********/
+
+figure.home-header img,
+figure.project img,
+figure.project-small img,
+figure.home-header-small img {
+  width: 100%;
+}
+
+.col-xs-12 {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.col-xs-11 {
+  display: none;
+}
