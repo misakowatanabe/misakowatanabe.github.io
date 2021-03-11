@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- animation library for the main text -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="pure-drawer.min.css">
@@ -71,48 +73,116 @@
     </div>
 
     <!-- Start Header -->
-
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 full-width">
+                <div class="gradient"></div>
+            </div>
+        </div>
+    </div>
 
     <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 full-width">
+                <div class="main-text">
+                    <span class="text-wrapper">
+                        <span class="line line1"></span>
+                        <span class="letters">Hi, I'm Misako</span>
+                    </span>
+                </div>
+                <div class="sub-text">sub-text.sub-text.sub-text.sub-text.</div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Start Project 1 -->
+    <div class="container-fluid project-full first" id="work">
 
         <div class="row">
             <div class="col-xs-12 full-width">
-
-                <figure class="home-header">
-                    <img src="img/star.jpg" alt="home-header">
-                </figure>
-
-                <figure class="home-header-small">
-                    <img src="img/star.jpg" alt="home-header">
-                </figure>
-                <figure class="logo-lockup">
-                    <img src="img/home/logo-lockup.svg" alt="logo=lockup">
-                </figure>
+                <a href="timemessage/index.html">
+                    <figure class="project">
+                        <img src="img/project1.jpg" alt="project-1"> <!-- 1400x550 -->
+                    </figure>
+                    <figure class="project-small">
+                        <img src="img/project1-small.jpg" alt="project-1"> <!-- 1000x550 -->
+                    </figure>
+                    <div class="project aos-init aos-animate" id="younity" data-aos="fade-up">
+                        <h1 class="project-name container">Time Message</h1>
+                        <p class="project-role container">Short description</p>
+                    </div>
+                </a>
             </div>
+        </div>
+    </div>
+    <!-- End Project 1 -->
 
+    <!-- Start Project 2 -->
+    <div class="container-fluid project-full" id="work">
+
+        <div class="row">
+            <div class="col-xs-12 full-width">
+                <a href="todolist/index.html">
+                    <figure class="project">
+                        <img src="img/project2.jpg" alt="project-2">
+                    </figure>
+                    <figure class="project-small">
+                        <img src="img/project2-small.jpg" alt="project-2">
+                    </figure>
+                    <div class="project aos-init aos-animate" id="ba" data-aos="fade-up">
+                        <h1 class="project-name container">To-Do List</h1>
+                        <p class="project-role container">Short description</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- End Project 2 -->
+    <!-- Start Project 3 -->
+    <div class="container-fluid project-full" id="work">
+
+        <div class="row">
+            <div class="col-xs-12 full-width">
+                <a href="work/ba.html">
+                    <figure class="project">
+                        <img src="img/project3.jpg" alt="project-3">
+                    </figure>
+                    <figure class="project-small">
+                        <img src="img/project3-small.jpg" alt="project-3">
+                    </figure>
+                    <div class="project aos-init aos-animate" id="ba" data-aos="fade-up">
+                        <h1 class="project-name container">Project 3</h1>
+                        <p class="project-role container">Short description</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- End Project 3 -->
+
+    <!-- Start Footer -->
+    <div class="container-fluid footer-pad">
+        <div class="footer content">
+            <section class="section">
+                <a href="/contact.html"><button class="main-btn">Contact Me</button></a>
+            </section>
+            <!-- TODO: Style a button with css and Javascript -->
+            <!-- Make an animation (background zooming) when hovering each project -->
         </div>
 
+        <div class="row">
+
+            <div class="col-xs-12 footer">
+                <p class="footer-credits"></p>
+            </div>
+        </div>
 
     </div>
-
-    <!-- End Header -->
-
+    <!-- End Footer -->
 
 
-
-
-
-
-    <h1>Misako Watanabe</h1>
-    <a href="https://misakowatanabe.github.io/timemessage/" target="_blank">Time Message</a>
-    <a href="https://misakowatanabe.github.io/todolist/" target="_blank">Todolist</a>
-    <p id="test">test</p>
-    <button>Click me</button>
-    <p class="lead">This paragraph stands out.</p>
-    <p>This is a regular paragraph.</p>
-    </div>
-
-
+    <script src="main.js"></script>
 
 </body>
 

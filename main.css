@@ -1,24 +1,110 @@
 body {
-  background-color: #585858;
+  background-color: #ffffff;
   color: #333333;
+}
+
+div {
+  display: block;
+}
+
+.col-xs-12 {
+  min-height: 0px;
+}
+
+/* Gradient background */
+.gradient {
+  display: block;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  width: 100%;
+  height: 200px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* main text */
+.main-text {
+  font-size: 70px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  position: relative;
+  text-align: center;
+  margin-top: -40%;
+}
+
+.main-text .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.main-text .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 4px;
+  background-color: #fff;
+  transform-origin: 0 50%;
+}
+
+.main-text .line1 {
+  top: 0;
+  left: 0;
+}
+
+.main-text .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.sub-text {
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+  /* margin-bottom: 25%; */
 }
 
 /********** Home button and navbar **********/
 
-figure.logo {
-  margin-top: 10px;
+.logo img {
   position: fixed;
+  margin-top: 10px;
+  width: 40px;
 }
 
 nav.navbar {
   position: fixed;
   z-index: 10;
+  width: 100%;
+  height: 62px;
 }
 
 nav.navbar.bg {
-  background-color: #f7f7f700;
   margin-bottom: 0px;
   transition: all 0.5s ease 0s;
+}
+
+nav.navbar.bg.top-of-page {
+  background-color: transparent;
 }
 
 /* Position of texts of navbar */
@@ -39,25 +125,42 @@ ul.nav-items > li {
   padding-left: 30px;
 }
 
-/* color of the text contents in the navbar */
-a {
+/* Text contents in the navbar */
+.nav-items a {
   color: #ffffff;
   text-decoration: none;
 }
 
-a:focus,
-a:hover {
+li.work.home a,
+li.about.home a,
+li.contact.home a {
+  transition: all 0.2s ease 0s;
+}
+
+li.work.home a:focus,
+li.about.home a:focus,
+li.contact.home a:hover,
+li.work.home a:hover,
+li.about.home a:hover,
+li.contact.home a:hover {
   color: #f047d4;
   text-decoration: none;
 }
 
+.col-xs-11 {
+  display: none;
+}
+
 /********** Hamburger and x **********/
 
-/* colour of hamburger */
+/* style of hamburger */
 .pure-toggle-label .pure-toggle-icon,
 .pure-toggle-label .pure-toggle-icon:before,
 .pure-toggle-label .pure-toggle-icon:after {
   background: #ffffff;
+  transition: all 150ms ease-in-out;
+  -webkit-transition: all 150ms ease-in-out;
+  border-radius: 3px;
 }
 
 /* colour of hamburger when hovering */
@@ -119,6 +222,11 @@ p.mobile-menu-items {
   letter-spacing: -0.02em;
   line-height: 77px;
 }
+/* Speed to open and close drawer */
+[data-effect="pure-effect-slide"] .pure-drawer {
+  transition-duration: 250ms;
+  -webkit-transition-duration: 250ms;
+}
 
 /********** img **********/
 
@@ -129,11 +237,143 @@ figure.home-header-small img {
   width: 100%;
 }
 
+/* Remove padding of each img on right and left */
 .col-xs-12 {
-  padding-right: 0px;
-  padding-left: 0px;
+  padding: 0px;
 }
 
-.col-xs-11 {
+/* Change img to wider one at width 1200 (also see media-queries) */
+/* Connect each image with overlap */
+.home-header img,
+.project img {
   display: none;
+  margin-top: -2px;
+}
+
+.home-header-small img,
+.project-small img {
+  display: block;
+  margin-top: -2px;
+}
+
+/* Main logo in the center */
+/* figure.logo-lockup img {
+  width: 15%;
+}
+
+figure.logo-lockup {
+  position: relative;
+  text-align: center;
+  margin-top: -40%;
+  margin-bottom: 25%;
+} */
+
+
+/* Make focus animation for each project image when hovering without changing the size of image */
+/* position of all elements in the animation space should be "relative", otherwise they disappear */
+div.project-full img {
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+div.project-full:hover img {
+  -webkit-transform: scale(1.1); /* Safari and Chrome */
+  -moz-transform: scale(1.1); /* Firefox */
+  -ms-transform: scale(1.1); /* IE 9 */
+  -o-transform: scale(1.1); /* Opera */
+  transform: scale(1.1);
+}
+
+div.project-full {
+  overflow: hidden;
+  background-color: #000;
+}
+
+/* div.project {
+  margin-top: -2px;
+} */
+
+/* Project number */
+h3.project-number {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  color: #fff;
+  position: relative;
+  text-align: center;
+  margin-bottom: 0px;
+  /* padding-left: 3.4%; container padding from bootstrap + this */
+}
+
+/* Project name, divider and role */
+h1.project-name,
+p.project-role {
+  padding-left: 3%; /* container padding from bootstrap + this */
+}
+
+/* Remove the underline (affected by the pure drawer css) of project texts */
+.col-xs-12.full-width a:hover {
+  text-decoration: none;
+}
+
+h1.project-name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  color: #fff;
+  position: relative;
+  text-align: center;
+}
+
+p.project-role {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  color: #fff;
+  position: relative;
+  position: relative;
+  text-align: center;
+  padding-bottom: 7%;
+}
+
+/********** Footer **********/
+/* Canvas */
+.container-fluid.footer-pad {
+  background-color: #fff;
+  text-align: center;
+  position: relative; /* use this with z-index 1 to make the current layer higher than others. to fix the hight of the last image. */
+  z-index: 1;
+}
+/* Contents including blank space */
+.footer.content {
+  margin: 90px 0 90px 0;
+}
+.main-btn {
+  background-color: rgb(0, 26, 34);
+  font-size: 18px;
+  border: none;
+  color: #ffffff;
+  /* margin-top: 40px;  */
+  padding: 16px 32px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+  /* box-shadow: 0 0px 20px rgba(0,0,0,0.2); */
+  opacity: 0.8;
+  outline: none;
+  transition: all 0.1s ease;
+}
+.main-btn:hover {
+  background-color: #f047d4;
+  color: #ffffff;
+  opacity: 1;
+  transform: scale(1.05, 1.05);
+}
+.main-btn:active {
+  background-color: #f047d4;
+  color: #ffffff;
+  opacity: 1;
+  transform: scale(1.02, 1.02);
 }

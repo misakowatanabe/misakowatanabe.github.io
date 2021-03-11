@@ -7,14 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <meta name="description" content="The portfolio website of Misako Watanabe" />
+    <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="about.css"> <!-- TODO: Make about.css-->
+    <link rel="stylesheet" href="pure-drawer.min.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="media-queries.css">
+
+
 
     <script>
     // TODO: Add Page Load javascript
@@ -22,7 +28,58 @@
 </head>
 
 <body>
-    <p>About</p>
+    <!-- TODO: Add Page Loader -->
+    <nav class="navbar home bg">
+        <div class="container">
+            <!-- to overlap elements with negative margin -->
+            <div class="row">
+                <div class="col-xs-1">
+                    <figure class="logo">
+                        <a href="#home"><img src="img/home.svg" alt="logo"></a>
+                    </figure>
+                </div>
+                <div class="col-xs-11">
+                    <ul class="nav-items">
+                        <li class="work home"><a href="#work">Work</li></a>
+                        <li class="about home"><a href="about.html">About</li></a>
+                        <li class="contact home"><a href="contact.html">Contact</li></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Start Responsive Menu Icon (hamburger) -->
+    <div class="pure-container" data-effect="pure-effect-slide">
+        <input type="checkbox" id="pure-toggle-right" class="pure-toggle" data-toggle="right" />
+        <label class="pure-toggle-label" for="pure-toggle-right" data-toggle-label="right">
+            <span class="pure-toggle-icon"></span>
+        </label>
+        <nav class="pure-drawer" data-position="right">
+            <p class="mobile-menu-items" style="padding: 140px 40px; margin: 0;">
+                <a href="index.html#work">Work</a>
+                <br>
+                <a href="about.html">About</a>
+                <br>
+                <a href="contact.html">Contact</a>
+            </p>
+        </nav>
+        <div class="pure-pusher-container">
+            <div class="pure-pusher"></div>
+        </div>
+        <label class="pure-overlay" for="pure-toggle-right" data-overlay="right"></label>
+    </div>
+
+    <div class="container-fluid">
+    
+        <div class="row">
+            <div class="col-xs-12 full-width">
+    
+                
+    
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
