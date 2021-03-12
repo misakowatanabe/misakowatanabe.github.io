@@ -61,7 +61,7 @@
     height: 750px;
   }
   .main-text {
-    font-size: 66px;
+    font-size: 60px;
     margin-top: -49%;
   }
   h1.project-name {
@@ -75,11 +75,9 @@
 
 @media screen and (max-width: 1199px) {
   .main-text {
-    font-size: 58px;
     margin-top: -52%;
   }
   h1.project-name {
-    font-size: 48px;
     margin-top: -38%;
   }
   p.project-role {
@@ -93,15 +91,13 @@
     height: 650px;
   }
   .main-text {
-    font-size: 51px;
     margin-top: -55%;
   }
   h1.project-name {
-    font-size: 42px;
     margin-top: -40%;
   }
   p.project-role {
-    font-size: 20px;
+    font-size: 30px;
     padding-top: 9px;
     padding-bottom: 8%;
   }
@@ -109,11 +105,9 @@
 
 @media screen and (max-width: 765px) {
   .main-text {
-    font-size: 44px;
     margin-top: -69%;
   }
   h1.project-name {
-    font-size: 40px;
     margin-top: -40%;
   }
   p.project-role {
@@ -127,20 +121,18 @@
     height: 500px;
   }
   .main-text {
-    font-size: 38px;
     margin-top: -70%;
   }
   .sub-text {
-    font-size: 20px;
+    font-size: 30px;
     margin-left: 5%;
     margin-right: 5%;
   }
   h1.project-name {
-    font-size: 32px;
+    font-size: 45px;
     margin-top: -42%;
   }
   p.project-role {
-    font-size: 18px;
     padding-top: 6px;
     padding-bottom: 5%;
   }
@@ -151,20 +143,16 @@
     height: 450px;
   }
   .main-text {
-    font-size: 32px;
     margin-top: -72%;
   }
   .sub-text {
-    font-size: 18px;
     margin-left: 5%;
     margin-right: 5%;
   }
   h1.project-name {
-    font-size: 27px; /* Fix gaps between project pictures */
     margin-top: -45%;
   }
   p.project-role {
-    font-size: 16px;
     padding-top: 1px;
     padding-bottom: 3%;
   }
