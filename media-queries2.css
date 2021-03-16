@@ -1,3 +1,22 @@
+@media screen and (max-width: 357px) {
+  .main-text {
+  font-size: 35px;
+  }
+  .sub-text {
+  font-size: 17px;
+  }
+  .sub-text2 {
+  font-size: 17px;
+  }
+  .main-text .line {
+  width: 3px; /* thickness of the line */
+  }
+  .main-text .line1 {
+  top: 14px; /* starting point of the text navi line from the top of the font */
+  }
+}
+
+
 @media screen and (min-width: 688px) {
   /* Switch design of navbar */
   .pure-toggle-label {
@@ -13,13 +32,6 @@
   }
   .col-xs-11 {
     display: block;
-  }
-
-  .main-text {
-    font-size: 70px;
-  }
-  .main-text .line1 {
-    top: 25px; /* starting point of the line from top */
   }
 }
 

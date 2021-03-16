@@ -15,17 +15,25 @@ btn.on("click", function (e) {
   $("html, body").animate({ scrollTop: 0 }, "300");
 });
 
-// Wrap every letter in a span
+// Wrap every letter in a span in main text
 var textWrapper = document.querySelector(".main-text .main-letters");
 textWrapper.innerHTML = textWrapper.textContent.replace(
   /([,']|\w)/g,
   "<span class='main-letter'>$&</span>" // Use regex
 );
 
+// Wrap every letter in a span in sub text
 var textWrapper = document.querySelector(".sub-text .sub-letters");
 textWrapper.innerHTML = textWrapper.textContent.replace(
   /([.,']|\w)/g,
   "<span class='sub-letter'>$&</span>" // Use regex
+);
+
+// Wrap every letter in a span in sub text2
+var textWrapper = document.querySelector(".sub-text2 .sub-letters2");
+textWrapper.innerHTML = textWrapper.textContent.replace(
+  /([.,']|\w)/g,
+  "<span class='sub-letter2'>$&</span>" // Use regex
 );
 
 // Main text anime 
@@ -42,7 +50,7 @@ anime.timeline({ loop: false })
     translateX: [
       0,
       document.querySelector(".main-text .main-letters").getBoundingClientRect()
-        .width + 25,
+        .width + 17, // 17 is distance between text and bar line
     ],
     easing: "easeOutExpo",
     duration: 700,
@@ -72,5 +80,16 @@ anime.timeline({ loop: false }).add({
   duration: 600,
   offset: "+=0",
   delay: (el, i) => 34 * (i + 50),
+  // 34 is the speed of showing the text. 50 is waiting time before the first text is shown.
+});
+
+//  Sub text anime
+anime.timeline({ loop: false }).add({
+  targets: ".sub-text2 .sub-letter2",
+  opacity: [0, 1],
+  easing: "easeOutExpo",
+  duration: 600,
+  offset: "+=0",
+  delay: (el, i) => 34 * (i + 75),
   // 34 is the speed of showing the text. 50 is waiting time before the first text is shown.
 });
