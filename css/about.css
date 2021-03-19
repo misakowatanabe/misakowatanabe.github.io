@@ -1,0 +1,126 @@
+@import "pure-drawer-override.css";
+
+body {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+div {
+  display: block;
+}
+
+.col-xs-12 {
+  min-height: 0px;
+}
+
+/********** Start front **********/
+/* Gradient background */
+.gradient {
+  display: block;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.col-xs-12.full-width.main {
+  height: 640px;
+}
+/********** Start front **********/
+
+/********** Start navbar **********/
+
+.logo img {
+  position: fixed;
+  margin-top: 9px;
+  margin-left: -5px;
+  width: 40px;
+}
+
+nav.navbar {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: 62px;
+}
+
+nav.navbar.bg {
+  margin-bottom: 0px;
+  transition: all 0.5s ease 0s;
+}
+
+nav.navbar.bg.top-of-page {
+  background-color: transparent;
+}
+
+/* Position of texts of navbar */
+ul.nav-items {
+  text-align: right;
+}
+
+/* Style of the texts of navbar */
+ul.nav-items > li {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 19px;
+  letter-spacing: -1px;
+  padding-top: 20px;
+  text-align: right;
+  padding-top: 24px;
+  padding-left: 30px;
+}
+
+/* Text contents in the navbar */
+.nav-items a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+li.work.home a,
+li.about.home a,
+li.contact.home a {
+  transition: all 0.2s ease 0s;
+}
+
+li.work.home a:focus,
+li.about.home a:focus,
+li.contact.home a:hover,
+li.work.home a:hover,
+li.about.home a:hover,
+li.contact.home a:hover {
+  color: #d8f8fd;
+  text-decoration: none;
+}
+
+.col-xs-11 {
+  display: none;
+}
+/********** End navbar **********/
+
+/********** Start footer **********/
+/* Canvas */
+.container-fluid.footer-pad {
+  background-color: #ffffff;
+  text-align: center;
+  position: relative; /* use this with z-index 1 to make the current layer higher than others. to fix the hight of the last image. */
+  z-index: 1;
+}
+/* Contents including blank space */
+.footer.content {
+  margin: 90px 0 90px 0;
+}
+/********** End footer **********/

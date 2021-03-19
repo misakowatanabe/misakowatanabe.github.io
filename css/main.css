@@ -13,6 +13,7 @@ div {
   min-height: 0px;
 }
 
+/********** Start front **********/
 /* Gradient background */
 .gradient {
   display: block;
@@ -128,8 +129,9 @@ div {
   display: inline-block;
   line-height: 1em;
 }
+/********** End front **********/
 
-/********** Home button and navbar **********/
+/********** Start navbar **********/
 
 .logo img {
   position: fixed;
@@ -190,15 +192,16 @@ li.contact.home a:hover,
 li.work.home a:hover,
 li.about.home a:hover,
 li.contact.home a:hover {
-  color: #f047d4;
+  color: #d8f8fd;
   text-decoration: none;
 }
 
 .col-xs-11 {
   display: none;
 }
+/********** End navbar **********/
 
-/********** Project **********/
+/********** Start project **********/
 
 /* Remove padding of each img on right and left */
 .col-xs-12 {
@@ -290,11 +293,12 @@ p.project-description {
   font-size: 22px;
   color: #fff;
 }
+/********** End project **********/
 
-/********** Footer **********/
+/********** Start footer **********/
 /* Canvas */
 .container-fluid.footer-pad {
-  background-color: #fff;
+  background-color: #ffffff;
   text-align: center;
   position: relative; /* use this with z-index 1 to make the current layer higher than others. to fix the hight of the last image. */
   z-index: 1;
@@ -304,29 +308,96 @@ p.project-description {
   margin: 90px 0 90px 0;
 }
 .main-btn {
-  background-color: rgb(0, 26, 34);
+  background-color: #ffffff;
   font-family: "Poppins", sans-serif;
   font-size: 18px;
+  font-weight: 700;
   border: none;
-  color: #ffffff;
+  color: #002b33;
   padding: 16px 32px;
   text-decoration: none;
   cursor: pointer;
   border-radius: 5px;
   /* box-shadow: 0 0px 20px rgba(0,0,0,0.2); */
-  opacity: 0.8;
+  opacity: 1;
   outline: none;
   transition: all 0.1s ease;
 }
 .main-btn:hover {
-  background-color: #f047d4;
-  color: #ffffff;
+  background-color: #d8f8fd;
+  color: #002b33;
   opacity: 1;
   transform: scale(1.05, 1.05);
 }
 .main-btn:active {
-  background-color: #f047d4;
-  color: #ffffff;
+  background-color: #d8f8fd;
+  color: #002b33;
   opacity: 1;
   transform: scale(1.02, 1.02);
 }
+
+/* Gradient background */
+.gradient-footer {
+  display: block;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  /* width: 100%;
+  height: 100%; */
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/********** End footer **********/
+
+/********** Start go-to-top button **********/
+#top-button {
+  display: inline-block;
+  /* color: #8f8f8f; */
+  width: 50px;
+  height: 70px;
+  text-align: center;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#top-button:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+#top-button:active {
+  text-decoration: none;
+}
+#top-button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.material-icons {
+  font-size: 48px;
+  color: #ffffff;
+}
+
+.top {
+  font-size: 18px;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif; 
+  margin-top: -15px;
+  letter-spacing: 2px;
+  padding-left: 2px; /* make text look center to icon */ 
+}
+/********** End go-to-top button **********/

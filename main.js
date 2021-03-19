@@ -4,7 +4,7 @@ $(window).on("scroll", function () {
   if (scrollPos <= 50) {
     $(".navbar.bg").css("background-color", "transparent");
   } else {
-    $(".navbar.bg").css("background-color", "#1d2527e1");
+    $(".navbar.bg").css("background-color", "#1d2527bd");
   }
 });
 
@@ -95,7 +95,20 @@ anime.timeline({ loop: false }).add({
   // 34 is the speed of showing the text. 50 is waiting time before the first text is shown.
 });
 
-// Activate slideup fadein animation in project1 texts when entering in view
 
+// Go-to-top button
+var btn = $("#top-button");
 
+$(window).scroll(function () {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass("show");
+  } else {
+    btn.removeClass("show");
+  }
+});
+
+btn.on("click", function (e) {
+  e.preventDefault();
+  $("html, body").animate({ scrollTop: 0 }, "300");
+});
 
