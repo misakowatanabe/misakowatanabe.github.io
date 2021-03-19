@@ -16,9 +16,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="pure-drawer.min.css">
-    <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="media-queries.css">
+    <link rel="stylesheet" href="../css/pure-drawer-override.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
 
 
 
@@ -35,14 +36,14 @@
             <div class="row">
                 <div class="col-xs-1">
                     <figure class="logo">
-                        <a href="#home"><img src="img/home.svg" alt="logo"></a>
+                        <a href="#home"><img src="../img/home.svg" alt="logo"></a>
                     </figure>
                 </div>
                 <div class="col-xs-11">
                     <ul class="nav-items">
                         <li class="work home"><a href="#work">Work</li></a>
                         <li class="about home"><a href="about.html">About</li></a>
-                        <li class="contact home"><a href="contact.html">Contact</li></a>
+                        <li class="contact home"><a href="../contact/contact.html">Contact</li></a>
                     </ul>
                 </div>
             </div>
@@ -74,12 +75,17 @@
     
         <div class="row">
             <div class="col-xs-12 full-width">
-    
+                <h1 data-aos="fade-up">Test</h1>
                 
     
             </div>
         </div>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

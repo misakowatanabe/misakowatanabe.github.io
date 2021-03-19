@@ -36,8 +36,9 @@ textWrapper.innerHTML = textWrapper.textContent.replace(
   "<span class='sub-letter2'>$&</span>" // Use regex
 );
 
-// Main text anime 
-anime.timeline({ loop: false })
+// Main text anime
+anime
+  .timeline({ loop: false })
   .add({
     targets: ".main-text .line",
     scaleY: [0, 1],
@@ -93,3 +94,8 @@ anime.timeline({ loop: false }).add({
   delay: (el, i) => 34 * (i + 75),
   // 34 is the speed of showing the text. 50 is waiting time before the first text is shown.
 });
+
+// Activate slideup fadein animation in project1 texts when entering in view
+
+
+

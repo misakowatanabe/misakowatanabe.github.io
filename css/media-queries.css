@@ -1,24 +1,32 @@
 @media screen and (max-width: 357px) {
   .main-text {
-  font-size: 35px;
+    font-size: 35px;
   }
   .sub-text {
-  font-size: 17px;
+    font-size: 20px;
   }
   .sub-text2 {
-  font-size: 17px;
+    font-size: 20px;
   }
   .main-text .line {
-  width: 3px; /* thickness of the line */
+    width: 3px; /* thickness of the line */
   }
   .main-text .line1 {
-  top: 14px; /* starting point of the text navi line from the top of the font */
+    top: 14px; /* starting point of the text navi line from the top of the font */
+  }
+  h1.project-name {
+    font-size: 30px;
+  }
+  p.project-description {
+    font-size: 20px;
   }
 }
 
-
 @media screen and (min-width: 688px) {
   /* Switch design of navbar */
+  .logo img {
+    margin-top: 15px;
+  }
   .pure-toggle-label {
     display: none;
   }
@@ -27,7 +35,6 @@
     height: 80px;
   }
   nav.navbar.bg {
-    background-color: #1d2527af; /* Change transparency here instead of opacity, otherwise other text elements get affected. */
     border-radius: 0%;
   }
   .col-xs-11 {
@@ -41,9 +48,9 @@
 @media screen and (min-width: 1312px) {
   /* Switch between normal(small) and wider background pics */
   .project img {
-    display: block;
-  }
-  .project-small img {
     display: none;
+  }
+  .project-wide img {
+    display: block;
   }
 }

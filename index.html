@@ -10,7 +10,7 @@
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <!-- Latest compiled and minified CSS -->
+    <!-- Latest compiled and minified bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -18,22 +18,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="pure-drawer.min.css">
-    <link rel="stylesheet" href="main.css">
-    <!-- <link rel="stylesheet" href="media-queries.css"> -->
-    <link rel="stylesheet" href="media-queries2.css">
-
+    <!-- css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Resposive design css -->
+    <link rel="stylesheet" href="css/media-queries.css">
 
     <script>
-    // TODO: Add Page Load javascript
+        // TODO: Add Page Load javascript
     </script>
+
 </head>
 
 <body>
     <!-- TODO: Add Page Loader -->
     <nav class="navbar home bg">
         <div class="container">
-            <!-- to overlap elements with negative margin -->
             <div class="row">
                 <div class="col-xs-1">
                     <figure class="logo">
@@ -104,15 +104,17 @@
         <div class="row">
             <div class="col-xs-12 full-width">
                 <a href="timemessage/index.html">
-                    <figure class="project">
-                        <img src="img/project1.jpg" alt="project-1"> <!-- 1400x550 -->
-                    </figure>
-                    <figure class="project-small">
-                        <img src="img/project1-small.jpg" alt="project-1"> <!-- 1000x550 -->
-                    </figure>
-                    <div class="project aos-init aos-animate" id="younity" data-aos="fade-up">
+                    <div class="project-img">
+                        <figure class="project">
+                            <img src="img/timemessage-dark.jpg" alt="project-1"> <!-- 1000x550 -->
+                        </figure>
+                        <figure class="project-wide">
+                            <img src="img/project1.jpg" alt="project-1"> <!-- 1400x550 -->
+                        </figure>
+                    </div>
+                    <div id="project-texts" data-aos="fade-right">
                         <h1 class="project-name container">Time Message</h1>
-                        <p class="project-role container">Short description</p>
+                        <p class="project-description container">Short description</p>
                     </div>
                 </a>
             </div>
@@ -126,15 +128,17 @@
         <div class="row">
             <div class="col-xs-12 full-width">
                 <a href="todolist/index.html">
-                    <figure class="project">
-                        <img src="img/project2.jpg" alt="project-2">
-                    </figure>
-                    <figure class="project-small">
-                        <img src="img/project2-small.jpg" alt="project-2">
-                    </figure>
-                    <div class="project aos-init aos-animate" id="ba" data-aos="fade-up">
+                    <div class="project-img">
+                        <figure class="project">
+                            <img src="img/project2-small.jpg" alt="project-2">
+                        </figure>
+                        <figure class="project-wide">
+                            <img src="img/project2.jpg" alt="project-2">
+                        </figure>
+                    </div>
+                    <div id="project2-texts" data-aos="fade-right">
                         <h1 class="project-name container">To-Do List</h1>
-                        <p class="project-role container">Short description</p>
+                        <p class="project-description container">Short description</p>
                     </div>
                 </a>
             </div>
@@ -146,16 +150,18 @@
 
         <div class="row">
             <div class="col-xs-12 full-width">
-                <a href="work/ba.html">
-                    <figure class="project">
-                        <img src="img/project3.jpg" alt="project-3">
-                    </figure>
-                    <figure class="project-small">
-                        <img src="img/project3-small.jpg" alt="project-3">
-                    </figure>
-                    <div class="project aos-init aos-animate" id="ba" data-aos="fade-up">
+                <a href=" ">
+                    <div class="project-img">
+                        <figure class="project">
+                            <img src="img/project3-small.jpg" alt="project-3">
+                        </figure>
+                        <figure class="project-wide">
+                            <img src="img/project3.jpg" alt="project-3">
+                        </figure>
+                    </div>
+                    <div id="project3-texts" data-aos="fade-right">
                         <h1 class="project-name container">Project 3</h1>
-                        <p class="project-role container">Short description</p>
+                        <p class="project-description container">Short description</p>
                     </div>
                 </a>
             </div>
@@ -176,15 +182,18 @@
         <div class="row">
 
             <div class="col-xs-12 footer">
-                <p class="footer-credits"></p>
+                <p class="footer-credits">Test test test</p>
             </div>
         </div>
-
     </div>
     <!-- End Footer -->
 
-
     <script src="main.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
