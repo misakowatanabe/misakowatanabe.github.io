@@ -319,7 +319,7 @@ p.project-description {
   cursor: pointer;
   border-radius: 5px;
   /* box-shadow: 0 0px 20px rgba(0,0,0,0.2); */
-  opacity: 1;
+  opacity: 0.9;
   outline: none;
   transition: all 0.1s ease;
 }
@@ -356,6 +356,10 @@ p.project-description {
   100% {
     background-position: 0% 50%;
   }
+}
+
+.footer-credits {
+  color:#d3d3d3;
 }
 /********** End footer **********/
 
