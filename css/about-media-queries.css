@@ -5,6 +5,9 @@
     margin-left: auto;
   }
   .container-fluid {
-      display: flexbox;
+    display: flexbox;
+  }
+  .about-main-text {
+    font-size: 60px;
   }
 }
