@@ -1,7 +1,7 @@
 {
   "name": "myfirstreact",
   "version": "0.1.0",
-  "homepage": "https://misakowatanabe.github.io/react/myfirstreact",
+  "homepage": "https://misakowatanabe.github.io/react/myfirstreact/build",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.4",
@@ -14,7 +14,7 @@
     "build": "react-scripts build",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build --repo "
+    "deploy": "gh-pages -d build --repo https://github.com/misakowatanabe/misakowatanabe.github.io.git"
   },
   "eslintConfig": {
     "extends": [
