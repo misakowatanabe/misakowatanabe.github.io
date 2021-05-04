@@ -2,7 +2,7 @@
 
 # dependencies
 /node_modules
-/react/tutorial/myfirstreact/node_modules
+/react/myfirstreact/node_modules
 /.pnp
 .pnp.js
 
