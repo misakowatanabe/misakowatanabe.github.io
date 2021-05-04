@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/react/myfirstreact/static/css/main.4726bc33.chunk.css",
+    "main.js": "/react/myfirstreact/static/js/main.4fb13850.chunk.js",
+    "main.js.map": "/react/myfirstreact/static/js/main.4fb13850.chunk.js.map",
+    "runtime-main.js": "/react/myfirstreact/static/js/runtime-main.453be835.js",
+    "runtime-main.js.map": "/react/myfirstreact/static/js/runtime-main.453be835.js.map",
+    "static/js/2.4d664b41.chunk.js": "/react/myfirstreact/static/js/2.4d664b41.chunk.js",
+    "static/js/2.4d664b41.chunk.js.map": "/react/myfirstreact/static/js/2.4d664b41.chunk.js.map",
+    "index.html": "/react/myfirstreact/index.html",
+    "static/css/main.4726bc33.chunk.css.map": "/react/myfirstreact/static/css/main.4726bc33.chunk.css.map",
+    "static/js/2.4d664b41.chunk.js.LICENSE.txt": "/react/myfirstreact/static/js/2.4d664b41.chunk.js.LICENSE.txt",
+    "static/media/1.373d2460.jpeg": "/react/myfirstreact/static/media/1.373d2460.jpeg",
+    "static/media/1.e0a55d3d.jpeg": "/react/myfirstreact/static/media/1.e0a55d3d.jpeg",
+    "static/media/10.52122adb.jpeg": "/react/myfirstreact/static/media/10.52122adb.jpeg",
+    "static/media/10.7b9a7aa4.jpeg": "/react/myfirstreact/static/media/10.7b9a7aa4.jpeg",
+    "static/media/2.9a2d1c27.jpeg": "/react/myfirstreact/static/media/2.9a2d1c27.jpeg",
+    "static/media/2.e7fd575d.jpeg": "/react/myfirstreact/static/media/2.e7fd575d.jpeg",
+    "static/media/3.1a601c65.jpeg": "/react/myfirstreact/static/media/3.1a601c65.jpeg",
+    "static/media/3.defcb6f7.jpeg": "/react/myfirstreact/static/media/3.defcb6f7.jpeg",
+    "static/media/4.7b43c12c.jpeg": "/react/myfirstreact/static/media/4.7b43c12c.jpeg",
+    "static/media/4.cffab99c.jpeg": "/react/myfirstreact/static/media/4.cffab99c.jpeg",
+    "static/media/5.22290053.jpeg": "/react/myfirstreact/static/media/5.22290053.jpeg",
+    "static/media/5.bb62d075.jpeg": "/react/myfirstreact/static/media/5.bb62d075.jpeg",
+    "static/media/6.8659f9a3.jpeg": "/react/myfirstreact/static/media/6.8659f9a3.jpeg",
+    "static/media/6.9f763c91.jpeg": "/react/myfirstreact/static/media/6.9f763c91.jpeg",
+    "static/media/7.24b59c24.jpeg": "/react/myfirstreact/static/media/7.24b59c24.jpeg",
+    "static/media/7.edecbf47.jpeg": "/react/myfirstreact/static/media/7.edecbf47.jpeg",
+    "static/media/8.6e67492a.jpeg": "/react/myfirstreact/static/media/8.6e67492a.jpeg",
+    "static/media/8.7af06ee1.jpeg": "/react/myfirstreact/static/media/8.7af06ee1.jpeg",
+    "static/media/9.94749567.jpeg": "/react/myfirstreact/static/media/9.94749567.jpeg",
+    "static/media/9.be6d3128.jpeg": "/react/myfirstreact/static/media/9.be6d3128.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.453be835.js",
+    "static/js/2.4d664b41.chunk.js",
+    "static/css/main.4726bc33.chunk.css",
+    "static/js/main.4fb13850.chunk.js"
+  ]
+}
