@@ -1,1 +1,216 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/react/myfirstreact/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/react/myfirstreact/logo192.png"/><link rel="manifest" href="/react/myfirstreact/manifest.json"/><title>First project</title><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"/><link href="/react/myfirstreact/static/css/main.4726bc33.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script><script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script><script>!function(e){function r(r){for(var n,a,f=r[0],i=r[1],l=r[2],p=0,s=[];p<f.length;p++)a=f[p],Object.prototype.hasOwnProperty.call(o,a)&&o[a]&&s.push(o[a][0]),o[a]=0;for(n in i)Object.prototype.hasOwnProperty.call(i,n)&&(e[n]=i[n]);for(c&&c(r);s.length;)s.shift()();return u.push.apply(u,l||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,f=1;f<t.length;f++){var i=t[f];0!==o[i]&&(n=!1)}n&&(u.splice(r--,1),e=a(a.s=t[0]))}return e}var n={},o={1:0},u=[];function a(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,a),t.l=!0,t.exports}a.m=e,a.c=n,a.d=function(e,r,t){a.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},a.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},a.t=function(e,r){if(1&r&&(e=a(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(a.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)a.d(t,n,function(r){return e[r]}.bind(null,n));return t},a.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return a.d(r,"a",r),r},a.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},a.p="/react/myfirstreact/";var f=this.webpackJsonpmyfirstreact=this.webpackJsonpmyfirstreact||[],i=f.push.bind(f);f.push=r,f=f.slice();for(var l=0;l<f.length;l++)r(f[l]);var c=i;t()}([])</script><script src="/react/myfirstreact/static/js/2.4d664b41.chunk.js"></script><script src="/react/myfirstreact/static/js/main.4fb13850.chunk.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misako Watanabe</title>
+    <meta name="description" content="The portfolio website of Misako Watanabe" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <!-- Google icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Latest compiled and minified bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- animation library for main texts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- AOS css for project texts -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Resposive design css -->
+    <link rel="stylesheet" href="css/media-queries.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+    <script>
+        // TODO: Add Page Load javascript
+    </script>
+
+</head>
+
+<body>
+    <!-- TODO: Add Page Loader -->
+    <nav class="navbar home bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-1">
+                    <figure class="logo">
+                        <a href="#home"><img src="img/home.svg" alt="logo"></a>
+                    </figure>
+                </div>
+                <div class="col-xs-11">
+                    <ul class="nav-items">
+                        <!-- <li class="work home"><a href="#work">Work</li></a> -->
+                        <li class="about home"><a href="about/about.html">About</li></a>
+                        <li class="contact home"><a href="contact/contact.html">Contact</li></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Start Responsive Menu Icon (hamburger) -->
+    <div class="pure-container" data-effect="pure-effect-slide">
+        <input type="checkbox" id="pure-toggle-right" class="pure-toggle" data-toggle="right" />
+        <label class="pure-toggle-label" for="pure-toggle-right" data-toggle-label="right">
+            <span class="pure-toggle-icon"></span>
+        </label>
+        <nav class="pure-drawer" data-position="right">
+            <p class="mobile-menu-items" style="padding: 140px 40px; margin: 0;">
+                <!-- <a href="index.html#work">Work</a>
+                <br> -->
+                <a href="about/about.html">About</a>
+                <br>
+                <a href="contact/contact.html">Contact</a>
+            </p>
+        </nav>
+        <div class="pure-pusher-container">
+            <div class="pure-pusher"></div>
+        </div>
+        <label class="pure-overlay" for="pure-toggle-right" data-overlay="right"></label>
+    </div>
+
+    <!-- Start Header -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 full-width main">
+                <div class="gradient">
+                    <a href="about/about.html">
+                        <div class="main-text">
+                            <span class="text-wrapper">
+                                <span class="line line1"></span>
+                                <span class="main-letters">Hi, I'm Misako</span>
+                            </span>
+                            <div class="sub-text">
+                                <span class="text-wrapper">
+                                    <span class="sub-letters">A beginner web developer.</span>
+                                </span>
+                            </div>
+                            <div class="sub-text2">
+                                <span class="text-wrapper">
+                                    <span class="sub-letters2">This site contains projects that I tried.</span>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Start Project 1 -->
+    <div class="container-fluid project-full first" id="work">
+
+        <div class="row">
+            <div class="col-xs-12 full-width">
+                <a href="timemessage/index.html">
+                    <div class="project-img">
+                        <figure class="project">
+                            <img src="img/timemessage.jpg" alt="project-1"> <!-- 1000x550 black transparency 54% -->
+                        </figure>
+                        <figure class="project-wide">
+                            <img src="img/timemessage-wide.jpg" alt="project-1">
+                            <!-- 1400x550 black transparency 54% -->
+                        </figure>
+                    </div>
+                    <div id="project-texts" data-aos="fade-right">
+                        <h1 class="project-name container">Time Message</h1>
+                        <p class="project-description container">A site which recommends you what to do based on current time</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- End Project 1 -->
+
+    <!-- Start Project 2 -->
+    <div class="container-fluid project-full" id="work">
+
+        <div class="row">
+            <div class="col-xs-12 full-width">
+                <a href="todolist/index.html">
+                    <div class="project-img">
+                        <figure class="project">
+                            <img src="img/todolist.jpg" alt="project-2">
+                        </figure>
+                        <figure class="project-wide">
+                            <img src="img/todolist-wide.jpg" alt="project-2">
+                        </figure>
+                    </div>
+                    <div id="project2-texts" data-aos="fade-right">
+                        <h1 class="project-name container">To-Do List</h1>
+                        <p class="project-description container">A simple to-do list with a random mountain image</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- End Project 2 -->
+    <!-- Start Project 3 -->
+    <!-- <div class="container-fluid project-full" id="work">
+
+        <div class="row">
+            <div class="col-xs-12 full-width">
+                <a href=" ">
+                    <div class="project-img">
+                        <figure class="project">
+                            <img src="img/project3-small.jpg" alt="project-3">
+                        </figure>
+                        <figure class="project-wide">
+                            <img src="img/project3.jpg" alt="project-3">
+                        </figure>
+                    </div>
+                    <div id="project3-texts" data-aos="fade-right">
+                        <h1 class="project-name container">Project 3</h1>
+                        <p class="project-description container">Short description</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div> -->
+    <!-- End Project 3 -->
+
+    <!-- Start Footer -->
+    <div class="container-fluid footer-pad gradient-footer">
+        <div class="footer content">
+            <section class="section">
+                <a href="contact/contact.html"><button class="main-btn">Contact Me</button></a>
+            </section>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 footer">
+                <p class="footer-credits">©2021 Misako Watanabe<br>Website design and development inspired by Colin Simpson Design https://colinsimpsondesign.com/</p>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer -->
+
+    <!-- Start stuck go-to-top button -->
+    <div id="top-button">
+        <span class="material-icons">keyboard_arrow_up</span>
+        <p class="top">TOP</p>
+    </div>
+    <!-- Start stuck go-to-top button -->
+
+
+    <script src="js/main.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
