@@ -265,24 +265,6 @@ div.project-full {
   width: 100%;
 }
 
-#project2-texts {
-  position: absolute; /* since this is child of container "col-xs-12.full-width.main" */
-  text-align: center; /* vertically center-alligned */
-  top: 25%; /* horizontally center-alligned */
-  padding-left: 4%;
-  padding-right: 4%;
-  width: 100%;
-}
-
-#project3-texts {
-  position: absolute; /* since this is child of container "col-xs-12.full-width.main" */
-  text-align: center; /* vertically center-alligned */
-  top: 25%; /* horizontally center-alligned */
-  padding-left: 4%;
-  padding-right: 4%;
-  width: 100%;
-}
-
 h1.project-name {
   font-family: "Poppins", sans-serif;
   font-size: 35px;
