@@ -215,7 +215,7 @@ li.contact.home a:hover {
   display: block;
   width: 100%;
   margin-top: -2px;
-  filter: saturate(0.9);
+  /* filter: saturate(0.9); */
   filter: brightness(65%);
 }
 
@@ -223,7 +223,8 @@ li.contact.home a:hover {
   display: none;
   width: 100%;
   margin-top: -2px;
-  filter: saturate(0.7);
+  /* filter: saturate(0.7); */
+  filter: brightness(65%);
 }
 
 /* Make focus animation for each project image when hovering without changing the size of image */
@@ -246,7 +247,7 @@ div.project-full:hover img {
 
 div.project-full {
   overflow: hidden;
-  background-color: #000;
+  background-color: rgb(148, 148, 148);
 }
 
 /* Project name and role */
