@@ -1,0 +1,13 @@
+@media screen and (min-width: 688px) {
+  .canvas {
+    width: 658px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .container-fluid {
+    display: flexbox;
+  }
+  .about-main-text {
+    font-size: 60px;
+  }
+}

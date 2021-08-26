@@ -1,12 +1,12 @@
 @media screen and (max-width: 357px) {
   .main-text {
-    font-size: 35px;
+    font-size: 30px;
   }
   .sub-text {
-    font-size: 20px;
+    font-size: 18px;
   }
   .sub-text2 {
-    font-size: 20px;
+    font-size: 18px;
   }
   .main-text .line {
     width: 3px; /* thickness of the line */
@@ -15,15 +15,14 @@
     top: 14px; /* starting point of the text navi line from the top of the font */
   }
   h1.project-name {
-    font-size: 30px;
+    font-size: 24px;
   }
   p.project-description {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
 @media screen and (min-width: 688px) {
-  /* Switch design of navbar */
   .logo img {
     margin-top: 15px;
   }
@@ -39,6 +38,20 @@
   }
   .col-xs-11 {
     display: block;
+  }
+  h1.project-name {
+    font-size: 35px;
+  }
+  #project-texts {
+    position: absolute; 
+    text-align: center; 
+    top: 30%;
+    padding-left: 4%;
+    padding-right: 4%;
+    width: 100%;
+  }
+  p.project-description {
+    font-size: 20px;
   }
 }
 

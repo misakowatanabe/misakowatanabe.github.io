@@ -48,7 +48,7 @@ div {
   color: #ffffff;
   position: absolute; /* since this is child of container "col-xs-12.full-width.main" */
   text-align: center; /* vertically center-alligned */
-  top: 50%; /* horizontally center-alligned */
+  top: 40%; /* horizontally center-alligned */
   transform: translate(0, -50%); /* horizontally center-alligned */
   padding-left: 4%;
   padding-right: 4%;
@@ -129,6 +129,22 @@ div {
   display: inline-block;
   line-height: 1em;
 }
+
+.logo-links {
+  position: absolute; /* since this is child of container "col-xs-12.full-width.main" */
+  text-align: center; /* vertically center-alligned */
+  top: 50%; /* horizontally center-alligned */
+  transform: translate(0, -50%); /* horizontally center-alligned */
+  margin-top: 150px;
+  padding-left: 4%;
+  padding-right: 4%;
+  width: 100%; /* make the contents of this container align center */
+}
+
+.logo-container {
+  padding: 0px 20px;
+}
+
 /********** End front **********/
 
 /********** Start navbar **********/
@@ -260,7 +276,7 @@ div.project-full {
 #project-texts {
   position: absolute; /* since this is child of container "col-xs-12.full-width.main" */
   text-align: center; /* vertically center-alligned */
-  top: 25%; /* horizontally center-alligned */
+  top: 19%; /* horizontally center-alligned */
   padding-left: 4%;
   padding-right: 4%;
   width: 100%;
@@ -268,7 +284,7 @@ div.project-full {
 
 h1.project-name {
   font-family: "Poppins", sans-serif;
-  font-size: 35px;
+  font-size: 25px;
   font-weight: 400;
   letter-spacing: -1px;
   color: #fff;
@@ -276,10 +292,38 @@ h1.project-name {
 
 p.project-description {
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 200;
   color: #fff;
 }
+
+.project-link-container {
+  display: flex;
+  justify-content: center;
+}
+
+.project-link {
+  background-color: transparent;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  color: #fff;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 3px 6px;
+  cursor: pointer;
+  border: 1px solid #ffffff;
+  border-radius: 25px;
+}
+
+.project-link:active {
+  background-color: #ffffff85;
+}
+
 /********** End project **********/
 
 /********** Start footer **********/
@@ -347,8 +391,8 @@ p.project-description {
 }
 
 .footer-credits {
-  color:#d3d3d3;
-  height: 80px; 
+  color: #d3d3d3;
+  height: 80px;
 }
 /********** End footer **********/
 
@@ -389,9 +433,9 @@ p.project-description {
 .top {
   font-size: 18px;
   color: #ffffff;
-  font-family: "Poppins", sans-serif; 
+  font-family: "Poppins", sans-serif;
   margin-top: -15px;
   letter-spacing: 2px;
-  padding-left: 2px; /* make text look center to icon */ 
+  padding-left: 2px; /* make text look center to icon */
 }
 /********** End go-to-top button **********/

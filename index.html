@@ -27,7 +27,7 @@
     <!-- css -->
     <link rel="stylesheet" href="css/main.css">
     <!-- Resposive design css -->
-    <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="css/main-media-queries.css">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
@@ -50,8 +50,8 @@
                 </div>
                 <div class="col-xs-11">
                     <ul class="nav-items">
-                        <li class="about home"><a href="about/about.html">About</li></a>
-                        <li class="contact home"><a href="contact/contact.html">Contact</li></a>
+                        <li class="about home"><a href="about.html">About</li></a>
+                        <li class="contact home"><a href="contact.html">Contact</li></a>
                     </ul>
                 </div>
             </div>
@@ -66,9 +66,9 @@
         </label>
         <nav class="pure-drawer" data-position="right">
             <p class="mobile-menu-items" style="padding: 140px 40px; margin: 0;">
-                <a href="about/about.html">About</a>
+                <a href="about.html">About</a>
                 <br>
-                <a href="contact/contact.html">Contact</a>
+                <a href="contact.html">Contact</a>
             </p>
         </nav>
         <div class="pure-pusher-container">
@@ -82,7 +82,7 @@
         <div class="row">
             <div class="col-xs-12 full-width main">
                 <div class="gradient">
-                    <a href="about/about.html">
+                    <a href="about.html">
                         <div class="main-text">
                             <span class="text-wrapper">
                                 <span class="line line1"></span>
@@ -100,6 +100,16 @@
                             </div>
                         </div>
                     </a>
+                    <div class="logo-links">
+                        <figure>
+                            <span class="logo-container">
+                                <a href="https://github.com/misakowatanabe"><img src="img/GitHub-Mark-Light-64px.png"
+                                        alt="logo"></a></span>
+                            <span class="logo-container">
+                                <a href="https://www.linkedin.com/in/misako-watanabe-7899831a2/"><img
+                                        src="img/linkedin-64.png" alt="logo"></a></span>
+                        </figure>
+                    </div>
                 </div>
             </div>
         </div>
@@ -108,23 +118,33 @@
 
     <!-- Start Project 1 -->
     <div class="container-fluid project-full" id="work">
-    
+
         <div class="row">
             <div class="col-xs-12 full-width">
-                <a href="https://misakowatanabe.github.io/bored-app/">
-                    <div class="project-img">
-                        <figure class="project">
-                            <img src="img/boredAppNormal.jpg" alt="project-1">
-                        </figure>
-                        <figure class="project-wide">
-                            <img src="img/boredAppWide.jpg" alt="project-1">
-                        </figure>
+                <div class="project-img">
+                    <figure class="project">
+                        <img src="img/succulentSiteNormal.jpg" alt="project-1">
+                    </figure>
+                    <figure class="project-wide">
+                        <img src="img/succulentSiteWide.jpg" alt="project-1">
+                    </figure>
+                </div>
+                <div id="project-texts" data-aos="fade-right">
+                    <h1 class="project-name container">Happy Succulent</h1>
+                    <p class="project-description container">React.js | React Router | TypeScript | Material UI |
+                        E-commerce</p>
+                    <div class="project-link-container">
+                        <a href="happySucculent.html">
+                            <p class="project-link">Project</p>
+                        </a>
+                        <a href="https://misakowatanabe.github.io/succulents-site/" target="_blank">
+                            <p class="project-link">Demo</p>
+                        </a>
+                        <a href="https://github.com/misakowatanabe/succulents-site" target="_blank">
+                            <p class="project-link">Github</p>
+                        </a>
                     </div>
-                    <div id="project-texts" data-aos="fade-right">
-                        <h1 class="project-name container">Bored App</h1>
-                        <p class="project-description container">Web app which gives you suggestions on what to do</p>
-                    </div>
-                </a>
+                </div>
             </div>
         </div>
     </div>
@@ -135,59 +155,147 @@
 
         <div class="row">
             <div class="col-xs-12 full-width">
-                <a href="todolist/index.html">
-                    <div class="project-img">
-                        <figure class="project">
-                            <img src="img/todoListNormal.jpg" alt="project-2">
-                        </figure>
-                        <figure class="project-wide">
-                            <img src="img/todoListWide.jpg" alt="project-2">
-                        </figure>
+                <div class="project-img">
+                    <figure class="project">
+                        <img src="img/boredAppNormal.jpg" alt="project-1">
+                    </figure>
+                    <figure class="project-wide">
+                        <img src="img/boredAppWide.jpg" alt="project-1">
+                    </figure>
+                </div>
+                <div id="project-texts" data-aos="fade-right">
+                    <h1 class="project-name container">Bored App</h1>
+                    <p class="project-description container">React.js | Axios | JavaScript | Material UI | Bored API
+                    </p>
+                    <div class="project-link-container">
+                        <a href="boredApp.html">
+                            <p class="project-link">Project</p>
+                        </a>
+                        <a href="https://misakowatanabe.github.io/bored-app/" target="_blank">
+                            <p class="project-link">Demo</p>
+                        </a>
+                        <a href="https://github.com/misakowatanabe/bored-app" target="_blank">
+                            <p class="project-link">Github</p>
+                        </a>
                     </div>
-                    <div id="project-texts" data-aos="fade-right">
-                        <h1 class="project-name container">To-Do List</h1>
-                        <p class="project-description container">A simple to-do list with a random mountain image</p>
-                    </div>
-                </a>
+                </div>
             </div>
         </div>
     </div>
     <!-- End Project 2 -->
+
     <!-- Start Project 3 -->
-    <div class="container-fluid project-full first" id="work">
-    
+    <div class="container-fluid project-full" id="work">
+
         <div class="row">
             <div class="col-xs-12 full-width">
-                <a href="timemessage/index.html">
-                    <div class="project-img">
-                        <figure class="project">
-                            <img src="img/timeMessageNormal.jpg" alt="project-3"> <!-- 1000x550 -->
-                        </figure>
-                        <figure class="project-wide">
-                            <img src="img/timeMessageWide.jpg" alt="project-3"> <!-- 1400x550 -->
-                        </figure>
+                <div class="project-img">
+                    <figure class="project">
+                        <img src="img/hangmanNormal.jpg" alt="project-1">
+                    </figure>
+                    <figure class="project-wide">
+                        <img src="img/hangmanWide.jpg" alt="project-1">
+                    </figure>
+                </div>
+                <div id="project-texts" data-aos="fade-right">
+                    <h1 class="project-name container">Hangman</h1>
+                    <p class="project-description container">React.js | JavaScript | Material UI</p>
+                    <div class="project-link-container">
+                        <a href="hangman.html">
+                            <p class="project-link">Project</p>
+                        </a>
+                        <a href="https://misakowatanabe.github.io/hangman-js/" target="_blank">
+                            <p class="project-link">Demo</p>
+                        </a>
+                        <a href="https://github.com/misakowatanabe/hangman-js" target="_blank">
+                            <p class="project-link">Github</p>
+                        </a>
                     </div>
-                    <div id="project-texts" data-aos="fade-right">
-                        <h1 class="project-name container">Time Message</h1>
-                        <p class="project-description container">A site which recommends you what to do based on current
-                            time</p>
-                    </div>
-                </a>
+                </div>
             </div>
         </div>
     </div>
     <!-- End Project 3 -->
 
+    <!-- Start Project 4 -->
+    <div class="container-fluid project-full" id="work">
+
+        <div class="row">
+            <div class="col-xs-12 full-width">
+                <div class="project-img">
+                    <figure class="project">
+                        <img src="img/todoListNormal.jpg" alt="project-2">
+                    </figure>
+                    <figure class="project-wide">
+                        <img src="img/todoListWide.jpg" alt="project-2">
+                    </figure>
+                </div>
+                <div id="project-texts" data-aos="fade-right">
+                    <h1 class="project-name container">To-Do List</h1>
+                    <p class="project-description container">Vanilla JavaScript | HTML | CSS</p>
+                    <div class="project-link-container">
+                        <a href="todoList.html">
+                            <p class="project-link">Project</p>
+                        </a>
+                        <a href="todolist/index.html" target="_blank">
+                            <p class="project-link">Demo</p>
+                        </a>
+                        <a href="https://github.com/misakowatanabe/misakowatanabe.github.io/tree/master/todolist"
+                            target="_blank">
+                            <p class="project-link">Github</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Project 4 -->
+
+    <!-- Start Project 5 -->
+    <div class="container-fluid project-full first" id="work">
+
+        <div class="row">
+            <div class="col-xs-12 full-width">
+                <div class="project-img">
+                    <figure class="project">
+                        <img src="img/timeMessageNormal.jpg" alt="project-3"> <!-- 1000x550 -->
+                    </figure>
+                    <figure class="project-wide">
+                        <img src="img/timeMessageWide.jpg" alt="project-3"> <!-- 1400x550 -->
+                    </figure>
+                </div>
+                <div id="project-texts" data-aos="fade-right">
+                    <h1 class="project-name container">Time Message</h1>
+                    <p class="project-description container">Vanilla JavaScript | HTML | CSS</p>
+                    <div class="project-link-container">
+                        <a href="timeMessage.html">
+                            <p class="project-link">Project</p>
+                        </a>
+                        <a href="timemessage/index.html" target="_blank">
+                            <p class="project-link">Demo</p>
+                        </a>
+                        <a href="https://github.com/misakowatanabe/misakowatanabe.github.io/tree/master/timemessage"
+                            target="_blank">
+                            <p class="project-link">Github</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Project 5 -->
+
     <!-- Start Footer -->
     <div class="container-fluid footer-pad gradient-footer">
         <div class="footer content">
             <section class="section">
-                <a href="contact/contact.html"><button class="main-btn">Contact Me</button></a>
+                <a href="contact.html"><button class="main-btn">Contact Me</button></a>
             </section>
         </div>
         <div class="row">
             <div class="col-xs-12 footer">
-                <p class="footer-credits">©2021 Misako Watanabe<br>Website design and development inspired by Colin Simpson Design https://colinsimpsondesign.com/</p>
+                <p class="footer-credits">©2021 Misako Watanabe<br>Website design and development inspired by Colin
+                    Simpson Design https://colinsimpsondesign.com/</p>
             </div>
         </div>
     </div>

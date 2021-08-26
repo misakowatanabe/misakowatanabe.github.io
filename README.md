@@ -1,8 +1,5 @@
 # Misako's Portfolio
-- About
-- Projects
-  
-## About
+
 This portfolio website consists of multiple projects that I made in the process of learning different front-end programming languages and frameworks.
  
 ## Projects

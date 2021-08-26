@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <meta name="description" content="The portfolio website of Misako Watanabe" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <!-- Google icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Latest compiled and minified bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- animation library for main texts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- AOS css for project texts -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/project.css">
+    <!-- Resposive design css -->
+    <link rel="stylesheet" href="css/main-media-queries.css">
+    <link rel="stylesheet" href="css/project-media-queries.css">
+
+
+
+    <script>
+    // TODO: Add Page Load javascript
+    </script>
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- TODO: Add Page Loader -->
+        <nav class="navbar home bg gradient">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-1">
+                        <figure class="logo">
+                            <a href="../index.html"><img src="../img/home.svg" alt="logo"></a>
+                        </figure>
+                    </div>
+                    <div class="col-xs-11">
+                        <ul class="nav-items">
+                            <li class="about home"><a href="about.html">About</li></a>
+                            <li class="contact home"><a href="contact.html">Contact</li></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Start Responsive Menu Icon (hamburger) -->
+        <div class="pure-container" data-effect="pure-effect-slide">
+            <input type="checkbox" id="pure-toggle-right" class="pure-toggle" data-toggle="right" />
+            <label class="pure-toggle-label" for="pure-toggle-right" data-toggle-label="right">
+                <span class="pure-toggle-icon"></span>
+            </label>
+            <nav class="pure-drawer" data-position="right">
+                <p class="mobile-menu-items" style="padding: 140px 40px; margin: 0;">
+                    <br>
+                    <a href="about.html">About</a>
+                    <br>
+                    <a href="contact.html">Contact</a>
+                </p>
+            </nav>
+            <div class="pure-pusher-container">
+                <div class="pure-pusher"></div>
+            </div>
+            <label class="pure-overlay" for="pure-toggle-right" data-overlay="right"></label>
+        </div>
+
+        <!-- Start Header -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="canvas">
+                        <div class="main-text">Happy Succulent</div>
+                        <div class="sub-text">React.js | React Router | TypeScript | Material UI | E-commerce</div>
+                        <!-- put some images -->
+                        <div class="feature-title">Feature</div>
+                        <div class="feature">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut nunc rutrum, iaculis sapien quis, pharetra tellus.
+                        Suspendisse bibendum imperdiet tortor iaculis scelerisque. Aliquam posuere urna eget risus cursus, in semper metus
+                        molestie. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi rutrum,
+                        lectus nec scelerisque condimentum, justo nisl pellentesque ipsum, a viverra sapien elit non mi. Vivamus odio elit,
+                        suscipit at justo quis, cursus auctor elit.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- End Header -->
+
+        <!-- Start footer -->
+        <!-- Do not use any attribute from bootstrap -->
+        <div class="container-fluid-footer">
+            <p class="footer">©2021 Misako Watanabe<br>Website design and development inspired
+                by Colin
+                Simpson
+                Design https://colinsimpsondesign.com/</p>
+        </div>
+        <!-- End footer -->
+
+        <!-- Start stuck go-to-top button -->
+        <div id="top-button">
+            <span class="material-icons">keyboard_arrow_up</span>
+            <p class="top">TOP</p>
+        </div>
+        <!-- End stuck go-to-top button -->
+    </div>
+    <script src="../js/about.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

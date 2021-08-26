@@ -120,28 +120,41 @@ li.contact.home a:hover {
 /********** End canvas **********/
 
 /********** Start texts **********/
-.about-main-text {
+.main-text {
   font-size: 40px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+ line-height: 1.5;
   color: #505050;
-  /* text-align: center; */
   padding-right: 30px;
   padding-left: 30px;
   padding-top: 30px;
-  /* padding-bottom: 40px; */
 }
 
-.about-sub-text {
+.sub-text {
   font-size: 14px;
   font-weight: 200;
   font-family: "Poppins", sans-serif;
   color: #505050;
-  /* text-align: center; */
-  padding: 30px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 15px 30px 0px 30px;
 }
+
+.feature-title {
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  color: #505050;
+  padding: 20px 30px 0px 30px;
+}
+
+.feature {
+  font-size: 14px;
+  font-weight: 200;
+  font-family: "Poppins", sans-serif;
+  color: #505050;
+  padding: 10px 30px 100px 30px;
+}
+
 /********** Start texts **********/
 
 /********** Start footer **********/
