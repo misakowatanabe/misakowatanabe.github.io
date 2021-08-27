@@ -14,8 +14,11 @@
   .main-text .line1 {
     top: 14px; /* starting point of the text navi line from the top of the font */
   }
+  #project-texts {
+  top: -3%;
+}
   h1.project-name {
-    font-size: 24px;
+    font-size: 20px;
   }
   p.project-description {
     font-size: 16px;
