@@ -126,12 +126,10 @@ li.contact.home a:hover {
   font-weight: 400;
   color: #505050;
   padding-top: 30px;
-  /* padding-bottom: 40px; */
 }
 
 .about-sub-text {
   font-size: 16px;
-  font-weight: 200;
   font-family: "Roboto",sans-serif;
   color: #505050;
   padding: 40px 0px 100px 0px;

@@ -74,7 +74,7 @@ ul.nav-items {
 /* Style of the texts of navbar */
 ul.nav-items > li {
   display: inline-block;
-  font-family: "Roboto",sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 19px;
   letter-spacing: -1px;
@@ -122,23 +122,16 @@ li.contact.home a:hover {
 /********** Start texts **********/
 .about-main-text {
   font-size: 32px;
-  font-family: "Roboto",sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #505050;
-  /* text-align: center; */
-  padding-right: 30px;
-  padding-left: 30px;
   padding-top: 30px;
-  /* padding-bottom: 40px; */
 }
 
 .about-sub-text {
   font-size: 16px;
-  font-weight: 200;
-  font-family: "Roboto",sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #505050;
-  /* text-align: center; */
-  padding: 30px;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -151,8 +144,6 @@ li.contact.home a:hover {
   background-color: transparent;
   color: #c7c7c7;
   text-align: center;
-  padding-right: 30px;
-  padding-left: 30px;
   height: 80px;
   position: absolute;
   bottom: 0;
