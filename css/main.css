@@ -43,9 +43,9 @@ div {
 /* main text */
 .main-text {
   font-size: 45px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 1px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto",sans-serif;
   color: #ffffff;
   position: absolute; /* since this is child of container "col-xs-12.full-width.main" */
   text-align: center; /* vertically center-alligned */
@@ -88,7 +88,7 @@ div {
 .sub-text {
   font-size: 22px;
   font-weight: 200;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto",sans-serif;
   color: #ffffff;
   position: relative;
   text-align: center;
@@ -112,7 +112,7 @@ div {
 .sub-text2 {
   font-size: 22px;
   font-weight: 200;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto",sans-serif;
   color: #ffffff;
   position: relative;
   text-align: center;
@@ -185,7 +185,7 @@ ul.nav-items {
 /* Style of the texts of navbar */
 ul.nav-items > li {
   display: inline-block;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto",sans-serif;
   font-weight: 300;
   font-size: 19px;
   letter-spacing: -1px;
@@ -236,7 +236,6 @@ li.contact.home a:hover {
   display: block;
   width: 100%;
   margin-top: -2px;
-  /* filter: saturate(0.9); */
   filter: brightness(65%);
 }
 
@@ -244,7 +243,6 @@ li.contact.home a:hover {
   display: none;
   width: 100%;
   margin-top: -2px;
-  /* filter: saturate(0.7); */
   filter: brightness(65%);
 }
 
@@ -288,7 +286,7 @@ div.project-full {
 }
 
 h1.project-name {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto",sans-serif;
   font-size: 25px;
   font-weight: 400;
   letter-spacing: -1px;
@@ -296,9 +294,9 @@ h1.project-name {
 }
 
 p.project-description {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto",sans-serif;
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 300;
   color: #fff;
 }
 
@@ -310,9 +308,9 @@ p.project-description {
 .project-link {
   background-color: transparent;
   border: none;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto",sans-serif;
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 300;
   color: #fff;
   padding: 10px 20px;
   text-align: center;
@@ -347,9 +345,9 @@ p.project-description {
 
 .main-btn {
   background-color: #ffffff;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto",sans-serif;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 400;
   border: none;
   color: #002b33;
   padding: 16px 32px;
@@ -408,8 +406,8 @@ p.project-description {
   height: 70px;
   text-align: center;
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 10px;
+  right: 10px;
   transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
   opacity: 0;
   visibility: hidden;
@@ -438,7 +436,7 @@ p.project-description {
 .top {
   font-size: 18px;
   color: #ffffff;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto",sans-serif;
   margin-top: -15px;
   letter-spacing: 2px;
   padding-left: 2px; /* make text look center to icon */

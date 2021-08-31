@@ -74,7 +74,7 @@ ul.nav-items {
 /* Style of the texts of navbar */
 ul.nav-items > li {
   display: inline-block;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto",sans-serif;
   font-weight: 300;
   font-size: 19px;
   letter-spacing: -1px;
@@ -121,26 +121,20 @@ li.contact.home a:hover {
 
 /********** Start texts **********/
 .about-main-text {
-  font-size: 40px;
-  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-family: "Roboto",sans-serif;
   font-weight: 400;
   color: #505050;
-  /* text-align: center; */
-  padding-right: 30px;
-  padding-left: 30px;
   padding-top: 30px;
   /* padding-bottom: 40px; */
 }
 
 .about-sub-text {
-  font-size: 19px;
+  font-size: 16px;
   font-weight: 200;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto",sans-serif;
   color: #505050;
-  /* text-align: center; */
-  padding: 30px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px 0px 100px 0px;
 }
 /********** Start texts **********/
 
@@ -150,54 +144,9 @@ li.contact.home a:hover {
   background-color: transparent;
   color: #c7c7c7;
   text-align: center;
-  padding-right: 30px;
-  padding-left: 30px;
   height: 80px;
   position: absolute;
   bottom: 0;
   width: 100%;
 }
 /********** End footer **********/
-
-/********** Start go-to-top button **********/
-#top-button {
-  display: inline-block;
-  /* color: #8f8f8f; */
-  width: 50px;
-  height: 70px;
-  text-align: center;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 1000;
-}
-
-#top-button:hover {
-  cursor: pointer;
-  text-decoration: none;
-}
-#top-button:active {
-  text-decoration: none;
-}
-#top-button.show {
-  opacity: 1;
-  visibility: visible;
-}
-
-.material-icons {
-  font-size: 48px;
-  color: #ffffff;
-}
-
-.top {
-  font-size: 18px;
-  color: #ffffff;
-  font-family: "Poppins", sans-serif;
-  margin-top: -15px;
-  letter-spacing: 2px;
-  padding-left: 2px; /* make text look center to icon */
-}
-/********** End go-to-top button **********/
