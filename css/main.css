@@ -352,14 +352,14 @@ p.project-description {
 }
 
 .main-btn:hover {
-  background-color: #d8f8fd;
+  background-color: #c0c0c0;
   color: #002b33;
   opacity: 1;
   transform: scale(1.05, 1.05);
 }
 
 .main-btn:active {
-  background-color: #d8f8fd;
+  background-color: #c0c0c0;
   color: #002b33;
   opacity: 1;
   transform: scale(1.02, 1.02);
