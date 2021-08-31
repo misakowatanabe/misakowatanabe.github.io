@@ -168,7 +168,35 @@ li.contact.home a:hover {
   font-weight: 200;
   font-family: "Poppins", sans-serif;
   color: #505050;
-  padding: 10px 0px 100px 0px;
+  padding: 10px 0px 40px 0px;
+}
+
+.project-link-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.project-link {
+  background-color: transparent;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  color: rgb(71, 71, 71);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 3px 6px;
+  cursor: pointer;
+  border: 1px solid rgb(71, 71, 71);
+  border-radius: 25px;
+}
+
+.project-link:active {
+  background-color: #ffffff85;
 }
 
 /********** End texts **********/
