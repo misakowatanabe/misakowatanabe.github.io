@@ -126,8 +126,6 @@ li.contact.home a:hover {
   font-weight: 600;
   line-height: 1.5;
   color: #505050;
-  padding-right: 30px;
-  padding-left: 30px;
   padding-top: 30px;
 }
 
@@ -136,17 +134,17 @@ li.contact.home a:hover {
   font-weight: 200;
   font-family: "Poppins", sans-serif;
   color: #505050;
-  padding: 15px 30px 0px 30px;
+  padding: 15px 0px 0px 0px;
 }
 
 .project-image img {
-  padding: 20px 30px 0px 30px;
+  padding: 20px 0px 0px 0px;
   width: 100%;
 }
 
-a {
-  padding: 20px 30px 0px 30px;
-  color: #b1b1b1;
+.mockup-link a {
+  padding: 20px 0px 0px 0px;
+  color: #bbbbbb;
 }
 
 .summary {
@@ -154,7 +152,7 @@ a {
   font-weight: 200;
   font-family: "Poppins", sans-serif;
   color: #505050;
-  padding: 20px 30px 10px 30px;
+  padding: 20px 0px 10px 0px;
 }
 
 .feature-title {
@@ -162,7 +160,7 @@ a {
   font-weight: 400;
   font-family: "Poppins", sans-serif;
   color: #505050;
-  padding: 20px 30px 0px 30px;
+  padding: 20px 0px 0px 0px;
 }
 
 .feature {
@@ -170,7 +168,7 @@ a {
   font-weight: 200;
   font-family: "Poppins", sans-serif;
   color: #505050;
-  padding: 10px 30px 100px 30px;
+  padding: 10px 0px 100px 0px;
 }
 
 /********** End texts **********/
@@ -182,54 +180,11 @@ a {
   background-color: transparent;
   color: #c7c7c7;
   text-align: center;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 0px;
+  padding-left: 0px;
   height: 80px;
   position: absolute;
   bottom: 0;
   width: 100%;
 }
 /********** End footer **********/
-
-/********** Start go-to-top button **********/
-#top-button {
-  display: inline-block;
-  /* color: #8f8f8f; */
-  width: 50px;
-  height: 70px;
-  text-align: center;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 1000;
-}
-
-#top-button:hover {
-  cursor: pointer;
-  text-decoration: none;
-}
-#top-button:active {
-  text-decoration: none;
-}
-#top-button.show {
-  opacity: 1;
-  visibility: visible;
-}
-
-.material-icons {
-  font-size: 48px;
-  color: #ffffff;
-}
-
-.top {
-  font-size: 18px;
-  color: #ffffff;
-  font-family: "Poppins", sans-serif;
-  margin-top: -15px;
-  letter-spacing: 2px;
-  padding-left: 2px; /* make text look center to icon */
-}
-/********** End go-to-top button **********/
