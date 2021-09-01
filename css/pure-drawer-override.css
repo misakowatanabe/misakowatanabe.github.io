@@ -26,6 +26,14 @@
   color: #c0c0c0;
 }
 
+.pure-toggle-label:visited .pure-toggle-icon,
+.pure-toggle-label:visited .pure-toggle-icon:before,
+.pure-toggle-label:visited .pure-toggle-icon:after {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
 /* style and position of the hamburger circle */
 .pure-toggle-label {
   border: 2px #c0c0c0;

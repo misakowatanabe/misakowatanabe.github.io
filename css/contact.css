@@ -45,14 +45,13 @@ div {
 
 .logo img {
   position: fixed;
-  margin-top: 9px;
-  margin-left: -5px;
+  margin: 9px 0px 0px -5px;
   width: 40px;
 }
 
 nav.navbar {
   position: fixed;
-  z-index: 10;
+  z-index: 1;
   width: 100%;
   height: 62px;
 }
@@ -78,10 +77,8 @@ ul.nav-items > li {
   font-weight: 300;
   font-size: 19px;
   letter-spacing: -1px;
-  padding-top: 20px;
   text-align: right;
-  padding-top: 24px;
-  padding-left: 30px;
+  padding: 24px 0px 0px 30px;
 }
 
 /* Text contents in the navbar */
@@ -132,8 +129,7 @@ li.contact.home a:hover {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   color: #505050;
-  padding-top: 30px;
-  padding-bottom: 40px;
+  padding: 30px 0px 40px 0px;
 }
 
 .logo-links {

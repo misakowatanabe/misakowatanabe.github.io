@@ -50,17 +50,14 @@ div {
   text-align: center; /* vertically center-alligned */
   top: 40%; /* horizontally center-alligned */
   transform: translate(0, -50%); /* horizontally center-alligned */
-  padding-left: 4%;
-  padding-right: 4%;
+  padding: 0px 4%;
   width: 100%; /* make the contents of this container align center */
 }
 
 .main-text .text-wrapper {
   position: relative;
   display: inline-block;
-  padding-top: 0.1em;
-  padding-right: 0.05em;
-  padding-bottom: 0.15em;
+  padding: 0.1em 0.05em 0.15em 0px;
 }
 
 .main-text .line {
@@ -97,9 +94,7 @@ div {
 .sub-text .text-wrapper {
   position: relative;
   display: inline-block;
-  padding-top: 0.1em;
-  padding-right: 0.05em;
-  padding-bottom: 0.15em;
+  padding: 0.1em 0.05em 0.15em 0px;
 }
 
 .sub-text .sub-letter {
@@ -120,9 +115,7 @@ div {
 .sub-text2 .text-wrapper {
   position: relative;
   display: inline-block;
-  padding-top: 0.1em;
-  padding-right: 0.05em;
-  padding-bottom: 0.15em;
+  padding: 0.1em 0.05em 0.15em 0px;
 }
 
 .sub-text2 .sub-letter2 {
@@ -136,8 +129,7 @@ div {
   top: 50%; 
   transform: translate(0, -50%); /* horizontally center-alligned */
   margin-top: 150px;
-  padding-left: 4%;
-  padding-right: 4%;
+  padding: 0px 4%;
   width: 100%; 
 }
 
@@ -155,8 +147,7 @@ div {
 
 .logo img {
   position: fixed;
-  margin-top: 9px;
-  margin-left: -5px;
+  margin: 9px 0px 0px -5px;
   width: 40px;
 }
 
@@ -188,10 +179,8 @@ ul.nav-items > li {
   font-weight: 300;
   font-size: 19px;
   letter-spacing: -1px;
-  padding-top: 20px;
   text-align: right;
-  padding-top: 24px;
-  padding-left: 30px;
+  padding: 24px 0px 0px 30px;
 }
 
 /* Text contents in the navbar */
@@ -274,8 +263,7 @@ div.project-full {
   position: absolute; /* since this is child of container "col-xs-12.full-width.main" */
   text-align: center; /* vertically center-alligned */
   top: 10%;
-  padding-left: 4%;
-  padding-right: 4%;
+  padding: 0px 4%;
   width: 100%;
 }
 

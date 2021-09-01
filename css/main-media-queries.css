@@ -49,8 +49,7 @@
     position: absolute;
     text-align: center;
     top: 30%;
-    padding-left: 4%;
-    padding-right: 4%;
+    padding: 0px 4%;
     width: 100%;
   }
   p.project-description {
