@@ -1,4 +1,4 @@
-@media screen and (max-width: 357px) {
+@media screen and (max-width: 400px) {
   .main-text {
     font-size: 30px;
   }
@@ -21,7 +21,7 @@
     font-size: 20px;
   }
   p.project-description {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 

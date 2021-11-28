@@ -22,20 +22,6 @@ textWrapper.innerHTML = textWrapper.textContent.replace(
   "<span class='main-letter'>$&</span>" // Use regex
 );
 
-// // Wrap every letter in a span in sub text
-// var textWrapper = document.querySelector(".sub-text .sub-letters");
-// textWrapper.innerHTML = textWrapper.textContent.replace(
-//   /([.,']|\w)/g,
-//   "<span class='sub-letter'>$&</span>" // Use regex
-// );
-
-// // Wrap every letter in a span in sub text2
-// var textWrapper = document.querySelector(".sub-text2 .sub-letters2");
-// textWrapper.innerHTML = textWrapper.textContent.replace(
-//   /([.,']|\w)/g,
-//   "<span class='sub-letter2'>$&</span>" // Use regex
-// );
-
 // Main text anime
 anime
   .timeline({ loop: false })
@@ -72,29 +58,6 @@ anime
     easing: "easeOutExpo",
     delay: 0,
   });
-
-//  Sub text anime
-// anime.timeline({ loop: false }).add({
-//   targets: ".sub-text .sub-letter",
-//   opacity: [0, 1],
-//   easing: "easeOutExpo",
-//   duration: 600,
-//   offset: "+=0",
-//   delay: (el, i) => 34 * (i + 50),
-//   // 34 is the speed of showing the text. 50 is waiting time before the first text is shown.
-// });
-
-// //  Sub text anime
-// anime.timeline({ loop: false }).add({
-//   targets: ".sub-text2 .sub-letter2",
-//   opacity: [0, 1],
-//   easing: "easeOutExpo",
-//   duration: 600,
-//   offset: "+=0",
-//   delay: (el, i) => 34 * (i + 75),
-//   // 34 is the speed of showing the text. 50 is waiting time before the first text is shown.
-// });
-
 
 // Go-to-top button
 var btn = $("#top-button");
