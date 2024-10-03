@@ -31,7 +31,7 @@
 
 
     <script>
-    // TODO: Add Page Load javascript
+        // TODO: Add Page Load javascript
     </script>
 </head>
 
@@ -81,67 +81,105 @@
             <div class="row">
                 <div class="col-xs-12">
                     <div class="canvas">
-                        <div class="main-text">Happy Succulent</div>
-                        <div class="sub-text">React | React Router | TypeScript | Material UI | E-commerce</div>
+                        <div class="main-text">ToDo App</div>
+                        <div class="sub-text">Next.js (React) | Storybook | Tailwind | Husky | Firebase
+                            Firestore | Firebase Authentication | Jest | Cypress | Testing
+                            Library | Firebase Local Emulator Suite | Vercel | Typescript | Figma</div>
                         <figure class="project-image">
-                            <img src="img/succulent.png" alt="project-1">
+                            <img src="img/todoAppVideo.gif" alt="project-1">
                         </figure>
-                        <div class="mockup-link">
-                            <a href='https://www.freepik.com/psd/mockup'>Mockup psd created by jcomp -
-                                www.freepik.com</a>
+                        <div class="summary">
+                            <p>A simple, easy-to-use task management app. It allows users to organize their work and
+                                keep track of tasks by offering
+                                multiple ways, such as labels and its changeable list order.</p>
                         </div>
-                        <div class="summary">Happy succulent is a functional, easy to use e-commerce website.</div>
                         <div class="feature-title">Features</div>
                         <div class="feature">
                             <p>
-                                🌟 Implemented routing to change pages by updating only necessary components.
+                                🌟 User authentication with email and password using Firebase Authentication.
                             </p>
                             <p>
-                                🌟 Built dynamic endpoint depending on user’s input to guide the user to the category
-                                pages and product view pages.
+                                🌟 Retrieval of todos data and real-time update of the todos, labels and the order of
+                                todos with Firebase Firestore.
                             </p>
                             <p>
-                                🌟 Displayed selected items fetched by ID.
+                                🌟 Performance optimization and enhanced data security by introducing server-side
+                                rendering when possible using Next.js
+                                (App Router).
                             </p>
                             <p>
-                                🌟 Built simple and user friendly interface.
+                                🌟 Improved UX and lower security risk through session cookies. It reduces the amount of
+                                user’s sign in process by setting
+                                if a user is currently signed in. The session expires in 24 hours and the user will
+                                forcefully be logged out for better
+                                security.
                             </p>
                             <p>
-                                🌟 Wrote all the codes in a safer way with type declarations.
+                                🌟 Routes protection using Middleware in Next.js. It checks user’s sign in status based
+                                on their session cookies before
+                                granting access to any app views, and redirect the user to the sign in view unless the
+                                user is signed in, and
+                                vice-versa.
                             </p>
                             <p>
-                                🌟 Achieved responsive design for mobile, iPad and bigger screen.
+                                🌟 Stronger security through re-authentication before security-sensitive actions, such
+                                as changing email address and
+                                deleting account, unless a user has recently signed in.
                             </p>
                             <p>
-                                🌟 Built add to cart function which brings data of a current item to cart preview and
-                                inside of
-                                the cart.
+                                🌟 Giving users more control of personal data by providing a capability to delete their
+                                entire account information and all
+                                associated personal data.
                             </p>
                             <p>
-                                🌟 Equipped quantity change function which enables the user to change quantity of each
-                                item inside
-                                cart while updating total quantity and subtotal of the cart.
+                                🌟 Rigorous end-to-end testing with Cypress, Testing Library and Firebase Local Emulator
+                                Suite. The E2E tests use the
+                                emulator on a test environment to mock a full capability of real authentication and
+                                database, which enables the tests to
+                                run on the same setting as a production environment without any possibility to harm the
+                                production.
                             </p>
                             <p>
-                                🌟 Built delete item function with total quantity and subtotal updates inside the cart.
+                                🌟 Deployment of the app with Vercel. Environment variables are safely set in the Vercel
+                                with sensitive flags.
                             </p>
                             <p>
-                                🌟 Implemented quantity change button in a way that it is a drop down button when its
-                                value is
-                                less than 9, and a text field when its value is more than 10.
+                                🌟 Pre-commit hook ensuring code quality and consistency using Husky.
                             </p>
                             <p>
-                                🌟 Set 404 page in case when an endpoint for either category or item has been deleted.
+                                🌟 Global state management using Context API from React. The managed contents include
+                                user authentication, user’s todos,
+                                labels and the order of todos.
                             </p>
                             <p>
-                                🌟 Built search function that users can search products by typing words or letters.
+                                🌟 Responsive design implemented from mobile to desktop view.
+                            </p>
+                            <p>
+                                🌟 Non-dependent, fully customizable UI component library of 15+ components (atom to
+                                organism levels from the atomic design
+                                methodology) using Tailwind. No external component library is used to reduce dependency
+                                and unexpected behavior.
+                            </p>
+                            <p>
+                                🌟 Robust visual tests implemented for each UI component with Storybook for better
+                                stability and maintainability.
+                            </p>
+                            <p>
+                                🌟 Enhanced accessibility by introducing keyboard navigation/shortcut and focus ring
+                                (:focus-visible) in the UI components,
+                                and by following recommendations outlined in WCAG 2.0 as much as possible in color
+                                contrast, text size, page layout etc.
+                            </p>
+                            <p>
+                                🌟 UI components design and each view’s layout on Figma to achieve the same look and
+                                feel across the app.
                             </p>
                         </div>
                         <div class="project-link-container">
-                            <a href="https://misakowatanabe.github.io/succulents-site/" target="_blank">
+                            <a href="https://todo-v2-ten.vercel.app/signin" target="_blank">
                                 <p class="project-link">Demo</p>
                             </a>
-                            <a href="https://github.com/misakowatanabe/succulents-site" target="_blank">
+                            <a href="https://github.com/misakowatanabe/todo-v2" target="_blank">
                                 <p class="project-link">GitHub</p>
                             </a>
                         </div>
